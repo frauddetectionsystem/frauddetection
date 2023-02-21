@@ -6,7 +6,7 @@ class UserDetail(models.Model):
     lastname = models.CharField(max_length=1000)
     gender = models.CharField(max_length=100)
     address = models.CharField(max_length=1000)
-    phonenumber = models.CharField(max_length=1000)
+    phonenumber = models.CharField(max_length=1000, unique=True)
     zipcode = models.CharField(max_length=500)
     password1 = models.CharField(max_length=10)
     password2 = models.CharField(max_length=10)
