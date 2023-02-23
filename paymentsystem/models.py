@@ -18,6 +18,9 @@ class UserDetail(models.Model):
     expiryday = models.CharField(max_length=50)
     expirymonth = models.CharField(max_length=50)
     expiryyear = models.CharField(max_length=50)
+    acctnumber = models.IntegerField(max_length=500)
+    cardtype = models.CharField(max_length=500)
+    cvv = models.IntegerField(max_length=5)
 
     def __str__(self):
         return self.nameoncard

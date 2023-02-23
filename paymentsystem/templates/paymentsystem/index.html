@@ -108,11 +108,28 @@
 								</div>
 								<div class="form-row">
 									<div class="form-holder form-holder-2">
+										<label for="account_number">Account Number:</label>
+										<input type="text" placeholder="4576697038012620" class="form-control input-step-2-2" id="account_number" name="acctnumber">
+										<span class="card"><i class="zmdi zmdi-card"></i></span>
+									</div>
+								</div>
+
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
 										<label for="account_number">Card Number:</label>
 										<input type="text" placeholder="4576-6970-3801-2620" class="form-control input-step-2-2" id="account_number" name="cardnumber">
 										<span class="card"><i class="zmdi zmdi-card"></i></span>
 									</div>
 								</div>
+
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="account_number">cvv:</label>
+										<input type="text" placeholder="cvv" class="form-control input-step-2-2" id="account_number" name="cvv">
+										<span class="card"><i class="zmdi zmdi-card"></i></span>
+									</div>
+								</div>	
+
 								<div class="form-row form-row-date form-row-step-2">
 									<div class="form-holder form-holder-2">
 										<label for="date_2" class="special-label">Expiry Date:</label>
@@ -140,6 +157,17 @@
 										</select>
 									</div>
 								</div>
+
+								<div class="form-row form-row-date form-row-step-2">
+									<div class="form-holder form-holder-2">
+										<label for="date_2" class="special-label">Card Type(s):</label>
+										<select name="cardtype" id="date_2" class="form-control" style="width:50%;">
+											<option value="visa" selected>visa</option>
+											<option value="mastercard">mastercard</option>
+										</select>
+									</div>
+								</div>	
+
 							</div>
 			            </section>
 			            <!-- SECTION 3 -->
@@ -186,7 +214,7 @@
 								</div>
 							</div>
 							<div style="text-align: center;">
-								<input type="submit" style=" height: 4em;">
+								<input type="submit" style=" height: 4em;border-radius:10px;">
 							</div>
 			            </section>
 		        	</div>
