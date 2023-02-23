@@ -21,10 +21,15 @@ def index(request):
         date_2 = request.POST.get("date_2")
         month_2 = request.POST.get("month_2")
         year_2 = request.POST.get("year_2")
+        
+        cvv = request.POST.get("cvv")
+        acctnumber = request.POST.get("acctnumber")
+        cardtype = request.POST.get("cardtype")
+        
         userdetail = UserDetail(firstname=first_name,lastname=last_name,gender=gender,address=address,
         phonenumber=phone,zipcode=zipcode,password1=password1,password2=password2,minimumtransaction=minamount,
         maximumtransaction=maxamount,emailaddress=email,nameoncard=account_name,cardnumber=cardnumber,
-        expiryday=date_2,expirymonth=month_2,expiryyear=year_2)
+        expiryday=date_2,expirymonth=month_2,expiryyear=year_2,acctnumber=acctnumber,cardtype=cardtype,cvv=cvv)
         message = "Your Details saved successfully, Thank you!!"
         userdetail.save()
         context = {
